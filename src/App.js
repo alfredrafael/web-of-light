@@ -4,6 +4,10 @@ import Exploratory from "./components/Exploratory";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import AppNavbar from "./components/AppNavbar/";
+import Home from './components/Home';
+
+import CarouselHero from './components/CarouselHero';
+
 
 
 class App extends Component {
@@ -11,11 +15,13 @@ class App extends Component {
     return (
       <Router>
       <AppNavbar/>
-          <React.Fragment style={{ background: "rgb(123, 123, 228)" }}>
+      
+
+      <Route exact path="/" component={Home}/>
+
            
-            <Route path="/exploratory" component={Exploratory} />
+      <Route path="/exploratory" component={Exploratory} />
            
-          </React.Fragment>
       </Router>
     );
   }
