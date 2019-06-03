@@ -1,8 +1,7 @@
 import React from 'react';
-import CarouselHero from '../CarouselHero/CarouselHero';
+import CarouselHero from '../CarouselHero';
+import WhatIs from '../WhatIs'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-
 
 
 
@@ -12,6 +11,7 @@ class Home extends React.Component {
         return (
             <React.Fragment>
             <CarouselHero />
+            <WhatIs />
             
 
             <Link to="/whatIs">What Is it</Link>
