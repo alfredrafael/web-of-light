@@ -83,7 +83,6 @@ class CarouselHero extends React.Component {
   }
 
   render() {
-
     const { activeIndex } = this.state;
 
     const slides = items.map(item => {

@@ -2,10 +2,6 @@
     z-index: 1 !important;
 }
 
-
-.myCarousel {
-
-}
 .carouselItem img { /*make pictures to fit in its carousel format */ 
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -15,9 +11,6 @@
     bottom: 0;
 }
 
-h3 {
-
-}
 
 .jumbotronContainer {
     position: absolute;
@@ -39,26 +32,6 @@ h3 {
     font-size: 550%;
     font-family: 'Montserrat', sans-serif;
 }
-
-/*
-from: https://github.com/reactstrap/reactstrap/issues/933
-
-.carousel-inner .carousel-item {
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: block;
-    position: absolute;
-    transition: opacity 1s ease-in-out;
-  }
-  .carousel-inner .carousel-item:first-of-type {
-    position: relative;
-  }
-  .carousel-inner .active {
-    opacity: 1;
-  }
-  */
 
 
 /*/////////////////// MEDIA QUERIES START /////////////////////////////////*/
