@@ -106,7 +106,7 @@ class CarouselHero extends React.Component {
     });
 
     return (
-      <div className="carouselReturn">
+      <div className="carouselReturn separatingLine">
         <div className="jumbotronContainer">
           <div className="jumbotron bg-transparent">
             <h1 className="display-4"><span style={{zIndex: '4', position: 'relative'}}>The Intellectual</span> <br/><span style={{position: 'relative'}}>

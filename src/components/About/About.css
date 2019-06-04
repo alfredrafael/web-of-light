@@ -1,0 +1,130 @@
+
+.aboutComponent {
+    padding: 3% 7%;
+    text-align: center;
+    background: linear-gradient(rgba(141, 141, 245, 0.619), white);
+
+}
+
+.generalText {
+    font-size: 200%;
+    font-weight: 150;
+}
+
+
+.headerText {
+    font-weight: 300 !important;
+    font-size: 250% !important;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 4%;
+    letter-spacing: 1px;
+}
+
+.headerText:after {
+    display: block;
+    height: 2px;
+    background-color: blue;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+
+
+/* ///////////////////////MEDIA QUERIES START//////////////////////////////// */
+
+
+/*Galaxy 5s*/
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+	.introHeaderMobile {
+        font-size: 150% !important;
+    }
+
+    .generalTextMobile {
+        font-size: 135% !important;
+    }
+
+}
+
+/*Samsung Galaxy S9 Media Queries (In terms of Mobile only)*/
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .introHeaderMobile {
+        font-size: 150% !important;
+    }
+
+    .generalTextMobile {
+        font-size: 145% !important;
+    }
+}
+
+/*iPhone XR*/
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+	.introHeaderMobile {
+        font-size: 150% !important;
+    }
+
+    .generalTextMobile {
+        font-size: 135% !important;
+    }
+}
+
+
+/*iPhone 5*/
+@media (device-height : 568px) 
+   and (device-width : 320px) 
+   and (-webkit-min-device-pixel-ratio: 2) {
+
+    .introHeaderMobile {
+        font-size: 150% !important;
+    }
+
+    .generalTextMobile {
+        font-size: 120% !important;
+    }
+}
+
+/*iPhone 6/7/8*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+
+    .introHeaderMobile {
+            font-size: 150% !important;
+        }
+
+    .generalTextMobile {
+            font-size: 135% !important;
+    }
+}
+
+/*iPhone 6+/7+/8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { 
+    
+    .introHeaderMobile {
+        font-size: 150% !important;
+    }
+
+    .generalTextMobile {
+        font-size: 135% !important;
+    }
+}
+
+/*iPhone X*/
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+        .introHeaderMobile {
+            font-size: 150% !important;
+            margin-top: 7% !important;
+        }
+    
+        .generalTextMobile {
+            font-size: 175% !important;
+        }
+        
+}
+

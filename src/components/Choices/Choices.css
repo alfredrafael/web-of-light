@@ -1,0 +1,42 @@
+
+.choicesContainer {
+    background: linear-gradient(white, rgba(141, 141, 245, 0.619));
+}
+
+.myRow {
+    padding-left: 5.3%;
+    margin-top: 5.2%;
+}
+
+.cardTitle {
+    font-size: 200% !important;
+}
+
+/*///////////////grow on hover///////////////////////////*/
+
+.growEffect {
+    transition: all .2s ease-in-out;
+}
+.growEffect:hover {
+    transform: scale(1.1)
+}
+
+/*//////////////////////////////////////////*/
+
+.cardBody {
+    /* background: linear-gradient(rgb(167, 153, 153), black); */
+    /* color: #ffff; */
+    font-weight: light;
+    font-size: 200%;
+    font-family: Lato;
+}
+
+.card {
+    text-align: center;
+    margin-bottom: 5%;
+    
+}
+
+.cardTitle {
+    
+}

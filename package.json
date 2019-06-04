@@ -8,6 +8,7 @@
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.0.0",
@@ -15,7 +16,9 @@
     "reactstrap": "^8.0.0",
     "styled-components": "^4.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mime": ">=1.4.1"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
