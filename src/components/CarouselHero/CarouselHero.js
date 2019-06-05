@@ -112,7 +112,7 @@ class CarouselHero extends React.Component {
             <h1 className="display-4"><span style={{zIndex: '4', position: 'relative'}}>The Intellectual</span> <br/><span style={{position: 'relative'}}>
             <Flash>
             <img src={xMark} 
-            style={{position: 'absolute', maxWidth: '124%', margin: '-45% -100% 0 16%'}}/></Flash>Dark</span> Web <span style={{fontFamily: "Permanent Marker, cursive", color: 'blue', marginBottom: '3%'}}> of Light</span></h1>
+            style={{position: 'absolute', maxWidth: '124%', margin: '-45% -100% 0 16%'}}/></Flash>Dark</span> Web <span className='ofLight'> of Light</span></h1>
             <p className="lead">
               A respository of concepts and thinkers rooting for Truth, in a world threatened by ideology
             </p>
@@ -135,13 +135,16 @@ class CarouselHero extends React.Component {
           className="carousel-fade myCarousel"
           ride="carousel"
         >
+        
           <CarouselIndicators
             items={items}
             activeIndex={activeIndex}
             onClickHandler={this.goToIndex}
           />
+          
           {slides}
-
+           
+          {/* 
           <CarouselControl
             direction="prev"
             directionText="Previous"
@@ -152,6 +155,8 @@ class CarouselHero extends React.Component {
             directionText="Next"
             onClickHandler={this.next}
           />
+           */}
+
         </Carousel>
       </div>
     );

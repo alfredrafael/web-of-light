@@ -2,6 +2,10 @@
     z-index: 1 !important;
 }
 
+.carousel-control-next-icon {
+  
+}
+
 .carouselItem img { /*make pictures to fit in its carousel format */ 
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -33,6 +37,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.ofLight {
+    font-family: 'Permanent Marker', cursive !important;
+    color: blue !important;
+    margin-bottom: 3% !important;
+    font-weight: light;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+
+
+}
 
 /*///////////////separating line /////////////////////////*/
 .separatingLine:after {

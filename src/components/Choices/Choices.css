@@ -4,24 +4,8 @@
 }
 
 .myRow {
-    padding-left: 5.3%;
     margin-top: 5.2%;
 }
-
-.cardTitle {
-    font-size: 200% !important;
-}
-
-/*///////////////grow on hover///////////////////////////*/
-
-.growEffect {
-    transition: all .2s ease-in-out;
-}
-.growEffect:hover {
-    transform: scale(1.1)
-}
-
-/*//////////////////////////////////////////*/
 
 .cardBody {
     /* background: linear-gradient(rgb(167, 153, 153), black); */
@@ -34,9 +18,28 @@
 .card {
     text-align: center;
     margin-bottom: 5%;
-    
 }
 
-.cardTitle {
-    
+.choiceCardTitle {
+    font-size: 200% !important;
+    color: black
 }
+
+.choiceCardText {
+    color: black;
+}
+
+.linkToChoice {
+   text-decoration: 'none' !important;
+}
+
+/*///////////////grow on hover///////////////////////////*/
+
+.growEffect {
+    transition: all .2s ease-in-out;
+}
+.growEffect:hover {
+    transform: scale(1.1)
+}
+
+/*//////////////////////////////////////////*/

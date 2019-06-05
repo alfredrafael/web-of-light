@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import AppNavbar from "./components/AppNavbar/";
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 import CarouselHero from './components/CarouselHero';
 
@@ -21,7 +22,7 @@ class App extends Component {
 
            
       <Route path="/exploratory" component={Exploratory} />
-           
+      <Footer/>
       </Router>
     );
   }
