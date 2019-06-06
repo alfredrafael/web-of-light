@@ -1,7 +1,6 @@
 import React from "react";
 import "./Exploratory.css";
 import { AnimatedBg, Transition } from "scroll-background";
-import AppNav from "../AppNavbar";
 import AppNavbar from "../AppNavbar";
 
 class Exploratory extends React.Component {

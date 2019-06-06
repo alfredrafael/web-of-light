@@ -12,8 +12,10 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
-import logo from "../../logo.svg";
 import darkWebLogo from "../../assets/intellectualdarkweb_png.png";
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
+
 
 class AppNavbar extends React.Component {
   constructor(props) {
@@ -24,6 +26,21 @@ class AppNavbar extends React.Component {
       isOpen: false
     };
   }
+
+  componentDidMount = () => {
+    window.onscroll = () => {
+      var scrollStatus = $(window).scrollTop();
+      if (scrollStatus > 700) {
+        $(".navbarStyles").css("background" , "rgba(19, 22, 62, 0.31)"); // changes to...
+        $(".navbarStyles").css("transition" , "2s");
+      }
+      else {
+        $(".navbarStyles").css("background" , "rgba(186, 177, 177, 0.31)"); // back to default...
+      }
+    }
+  }
+
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -33,6 +50,8 @@ class AppNavbar extends React.Component {
   render() {
     return (
       <div className="navbarContainer">
+      
+
         <Navbar
           expand="md"
           id="nav"
@@ -43,7 +62,9 @@ class AppNavbar extends React.Component {
             background: "rgba(186, 177, 177, 0.31)",
             color: "grey"
           }}
+          className="navbarStyles"
         >
+        
           <NavbarBrand
             href="/"
             style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,.75)" }}
@@ -111,8 +132,10 @@ class AppNavbar extends React.Component {
               </UncontrolledDropdown>
             </Nav>
           </Collapse>
+          
+         
         </Navbar>
-      </div>
+        </div>
     );
   }
 }
