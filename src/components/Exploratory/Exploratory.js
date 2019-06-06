@@ -1,15 +1,40 @@
-import React from 'react';
-import './Exploratory.css';
-
+import React from "react";
+import "./Exploratory.css";
+import { AnimatedBg, Transition } from "scroll-background";
+import AppNav from "../AppNavbar";
+import AppNavbar from "../AppNavbar";
 
 class Exploratory extends React.Component {
+  render() {
+    return (
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        {/* //////////////////////////////////////////////// */}
+        <div style={{height: '100vh'}}>
+          <AnimatedBg>
+           
+            <Transition
+              height="11.5vh"
+              from="#388E3C"
+              to="#FFA000"
+            >
 
-    render() {
-        return (
-            <div>
-            <p>This is the Exploratory Component ^_^ </p>
-           </div>
-        );
-   }
+            <AppNavbar />
+            </Transition>
+          </AnimatedBg>
+        </div>
+        {/* //////////////////////////////////////////////// */}
+      </div>
+    );
+  }
 }
 export default Exploratory;
