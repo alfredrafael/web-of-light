@@ -1,4 +1,5 @@
 import React from "react";
+import './AppNavbar.css';
 import {
   Collapse,
   Navbar,
@@ -30,14 +31,23 @@ class AppNavbar extends React.Component {
   componentDidMount = () => {
     window.onscroll = () => {
       var scrollStatus = $(window).scrollTop();
-      if (scrollStatus > 700) {
+      if (scrollStatus > 800) {
         $(".navbarStyles").css("background" , "rgba(19, 22, 62, 0.31)"); // changes to...
         $(".navbarStyles").css("transition" , "2s");
+        $(".navbarBrand").css("visibility" , "visible");
+        $(".navbarBrand").css("transition" , "2s");
       }
       else {
-        $(".navbarStyles").css("background" , "rgba(186, 177, 177, 0.31)"); // back to default...
+        $(".navbarStyles").css("background" , "rgba(186, 177, 177, 0.31)"); // not back to "tranparent" Mydefault...
       }
     }
+
+    var widthStatus = $(window).width();
+    if (widthStatus < 500) {
+      $(".navbarBrand").css("marginLeft" , "16%"); // changes to...
+      $(".navItem").css("background", "black");
+      $(".navItem").css("z-index", "9999"); 
+   }
   }
 
 
@@ -59,7 +69,7 @@ class AppNavbar extends React.Component {
           style={{
             zIndex: "9",
             position: "fixed",
-            background: "rgba(186, 177, 177, 0.31)",
+            background: "transparent",
             color: "grey"
           }}
           className="navbarStyles"
@@ -67,8 +77,9 @@ class AppNavbar extends React.Component {
         
           <NavbarBrand
             href="/"
-            style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,.75)" }}
+            style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,.75)", visibility: "hidden"}}
             className='navbarBrand'
+            
           >
             <img
               src={darkWebLogo}
@@ -80,29 +91,46 @@ class AppNavbar extends React.Component {
           </NavbarBrand>
           <NavbarToggler
             onClick={this.toggle}
-            style={{ background: "rgba(20, 26, 72, 0.44)", position: 'absolute', right: '3%' }}
+            style={{ background: "rgba(20, 26, 72, 0.44)", marginTop: '-12%'}}
           >
             <i style={{ color: "white"}} className="fas fa-bars" />
           </NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem style={{ zIndex: "9", color: "grey" }}>
+              <NavItem className='navItem' style={{ zIndex: "9", color: "grey" }}>
                 <NavLink
                   style={{
                     color: "white",
+                    fontSize: '125%',
+                    fontFamily: 'Lato',
                     textShadow: "1px 1px 0 rgba(0,0,0,.75)"
                   }}
-                  href="/components/"
+                  href="/"
                 >
-                  Components
+                  Home
                 </NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className='navItem' style={{ zIndex: "9", color: "grey" }}>
                 <NavLink
                   style={{
                     color: "white",
+                    fontSize: '125%',
+                    fontFamily: 'Lato',
                     textShadow: "1px 1px 0 rgba(0,0,0,.75)"
                   }}
+                  href="/exploratory/"
+                >
+                  Exploratory
+                </NavLink>
+              </NavItem>
+              <NavItem className='navItem'>
+                <NavLink
+                style={{
+                  color: "white",
+                  fontSize: '125%',
+                  fontFamily: 'Lato',
+                  textShadow: "1px 1px 0 rgba(0,0,0,.75)"
+                }}
                   href="https://github.com/reactstrap/reactstrap"
                 >
                   GitHub
@@ -118,8 +146,11 @@ class AppNavbar extends React.Component {
                   caret
                   style={{
                     color: "white",
+                    fontSize: '125%',
+                    fontFamily: 'Lato',
                     textShadow: "1px 1px 0 rgba(0,0,0,.75)"
                   }}
+                  className='navItem'
                 >
                   Options
                 </DropdownToggle>
