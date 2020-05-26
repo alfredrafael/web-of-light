@@ -17,7 +17,7 @@
     "react-scripts": "0.9.x",
     "reactstrap": "^8.0.0",
     "scroll-background": "^1.0.5",
-    "styled-components": "^4.2.1"
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "mime": ">=1.4.1"
